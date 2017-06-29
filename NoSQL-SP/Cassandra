@@ -1,1 +1,74 @@
-dasd
+Cassandra NosQL No Limts
+
+Otavio Santana
+
+@otaviojava
+osantana@tomitribe.com
+otaviojava@apache.org
+
+Key value, Document, Graph,
+
+Column
+ - Hbase
+ - Cassandra
+ - Scylla
+ - Clouddata
+ - SimpleDb
+ - DynamoDB
+
+MultiModel
+ - Orientdb
+ - couchbase
+ - Elasticsearch
+ - Cassandra
+
+Consistency Level
+todos os nós possuem as informações
+nivel de consistencia de 1 a todos, qualquer cada ou local
+mais disponível ou mais duravel
+
+Commit log
+Memtable
+SSTable
+
+vocabulario
+Gossip : comunicação p2p
+Partioner: comunicação interna, entre os dados e data centers
+ - como funciona internamente, baseado em chave.
+ -  é gerado um hash e assim distribuido nos servidores diferentes e depois é replicado.
+Snitch:
+Replica placement Strategy:
+ - SimpleStrategy
+ - Network Topology Strategy
+   Nó cordenador, background, readrepair, clock vector
+Seeds:
+cassandra.yaml: arquivo de configuração
+
+tples
+Text, blob, List, Set, Map, uuid
+
+Cassandra Query language
+Drop, Insert, update, delete, SQL LIKE
+
+Using a user-defined type
+Conceito semlhante ao Documentos e Subdocumentos
+
+Issues
+- Modeling
+- Search
+- Know-how
+- Know-why
+
+Otimizar o retorno em uma busca só (shot)
+
+Utilizar outros meios de busca, como elastic Search
+Saiba o Como e o porque de utilizar o Cassandra.
+
+
+Operações
+
+DataStax - gerenciador de nós
+
+Cassandra possui suporte ao Docker.
+
+
