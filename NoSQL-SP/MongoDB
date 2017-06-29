@@ -1,0 +1,55 @@
+Introdução ao MongoDB e Replica Sets
+
+Leandro domingues
+@delbussoweb
+
+Origem do nome: Humongous - Gigantesco
+Escrito em C++
+ Document Model / Multi-model (Chave/valor, graph)
+Opensource
+Alta disponibilidade
+Alta escalabilidade
+
+Enterprise  - usa storage in memory
+Community
+
+Replicaset é o mesmo conjunto de dados em storage diferente
+
+
+Multimodel database
+Combinar multplos modelos de armazenamento eacesso
+Oferece suporte a grafos "algo a mais"
+Persistencia Poliglota
+A "coisa mais nova" na NoSQLandia
+
+
+Sobre
+Documentos sao estruturas alinhadas criadas utilizando Javascript Object Notation JSON
+
+Na orientação JSON documentos alinhados, são tratados como listas dentro de um dos valores da lista json
+
+
+Durabilidade Replica Sets
+
+Nó1(primario):  item
+Nó2(secundario):  item (replicado)
+Nó3(secundario):  item(replicado)
+
+heartbeat : ping de status dos nós.
+
+Em uma falha no nó primário, um dos Nós secundários é escolhido como novo Primário
+Nó1(quebrado)
+Nó2(Primário)
+Nó3(Secundário)
+
+drivers de conexão são responsaveis por descobrir o primário e enviar as requisições.
+
+Quando o servidor quebrado é recuperado ele inicia em status de Recovery, num status de uplog.
+
+Nó1(Recovery)
+Nó2(Primary)
+Nó3(Secundary)
+
+O nó1, previamente configurado com prioridade para ser o primary, é eleito novamente o primeiro, após o seu recovery estiver completo.
+
+

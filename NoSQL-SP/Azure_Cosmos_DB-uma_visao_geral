@@ -2,4 +2,25 @@
 """Azure Cosmos DB"""
 ""Uma visão Geral""
 
-Apresentado por Renato Groffe (Mcirosoft MVP, MTAC)
+Apresentado por: Renato Groffe (Mcirosoft MVP, MTAC, Canal .NET)
+Githube github.com/renatogroffe
+
+ Azure Cosmos DB - como multimodel, permite trabalhar sql, javascript, azuretables gremlin e mongoDB
+
+
+Escalabilidade horiznontal e Elastic Scale
+
+multiploes modelos de consistencia
+
+sla - 99,99% de disponibilidade
+
+
+Funciona tanto no visal Studio quanto no Core
+
+
+exemplo de codigo
+Criando no Azure um azure Cosmos - > banco de dados
+permite o uso de expressão SQL, para realizar consultas
+O retorno da base vem como JSON.
+
+

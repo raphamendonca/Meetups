@@ -1,0 +1,53 @@
+"""Introdução ao Neo4j""
+
+Jhonathan S Soares
+
+Tipos de NOSQL
+  é um banco de dados nosql orientados a grafos
+  é o db com orientação a grafos mais utilizados do mundo
+
+ ele trabalha baseado no modelo de como os dados se relacionam
+
+
+Graph Databases:
+ - Representar dados ou esquema de grafos como graofs dirigidos (pontos, arestas, nós_)
+
+altgoritmo de Dijkstra: caminho com menor peso.
+
+Neo4j:
+ - Nós, Labels, Relacionamentos e Propriedades
+ - - Não são os registros
+ - - Labesl sao conjunto agrupados de nós
+ - - Relacionamentos sao as conexoes entre os nós
+ - - Propriedades são definições de um nós (Direção, agrupamento, etc)
+
+ - Multiplataforma instalação
+
+ - Community Edition e Enterprise Edition
+
+ roda na jvm, possui lib em c++,python,  implementa o apache lucini
+
+
+Cypher Query
+ - Linguagem declarativa, de inspiração SQL para descrever padoes em graficos utilizando uma sintaxe ascii-art
+
+permite CRUD do grafico sem necessidade de escrever como fazelo
+
+MATCH (p:pessoa{idade:25}) RETURN p
+ MATCH - nome do comando
+ P = pessao conjunto de dados
+ idade = atrbuto de pessoa
+ RETURN retorno da busca
+
+NEO4j integra java, c#, python, ruby, javascript, php (exemplo no gihub de implementação)
+
+
+Aplicações e usos:
+Fraud Detection
+GPS
+Realteime recommendations
+Social network
+Identity and access managments
+network and it operations
+
+
